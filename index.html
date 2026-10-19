@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Moments</title>
+    <meta
+      name="description"
+      content="Little Moments helps parents and caregivers find simple toddler activities without collecting personal information."
+    />
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero card">
+        <p class="eyebrow">Little Moments</p>
+        <h1>Quick ideas for tiny humans.</h1>
+        <p class="intro">Easy wins for busy days.</p>
+        <div class="hero-notes">
+          <span>Quick</span>
+          <span>Easy</span>
+          <span>Private</span>
+        </div>
+      </section>
+
+      <section class="controls card" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <h2 id="filters-title">Pick a mood</h2>
+          <p>Everything stays on your device.</p>
+        </div>
+
+        <form id="activity-form" class="filter-grid">
+          <label>
+            Age
+            <select name="age" id="age">
+              <option value="any">Any</option>
+              <option value="1-2">1–2 years</option>
+              <option value="2-3">2–3 years</option>
+              <option value="3-4">3–4 years</option>
+            </select>
+          </label>
+
+          <label>
+            Energy
+            <select name="energy" id="energy">
+              <option value="any">Any</option>
+              <option value="calm">Calm</option>
+              <option value="balanced">Balanced</option>
+              <option value="active">Active</option>
+            </select>
+          </label>
+
+          <label>
+            Time
+            <select name="time" id="time">
+              <option value="any">Any</option>
+              <option value="5">5 min</option>
+              <option value="10">10 min</option>
+              <option value="15">15 min</option>
+            </select>
+          </label>
+
+          <label>
+            Place
+            <select name="space" id="space">
+              <option value="any">Any</option>
+              <option value="indoors">Inside</option>
+              <option value="outdoors">Outside</option>
+              <option value="either">Either</option>
+            </select>
+          </label>
+
+          <button type="submit" class="primary-button">Find activity</button>
+          <button type="button" id="surprise-button" class="secondary-button">Surprise me</button>
+        </form>
+      </section>
+
+      <section class="result card" aria-live="polite" aria-labelledby="result-title">
+        <div class="section-heading">
+          <h2 id="result-title">Your pick</h2>
+          <p id="result-status">Choose a few filters and we’ll suggest something.</p>
+        </div>
+
+        <article id="activity-card" class="activity-card empty-state">
+          <p class="empty-copy">Your next easy idea will appear here.</p>
+        </article>
+
+        <div class="activity-extra">
+          <button id="show-more-button" type="button" class="secondary-button compact-button" hidden>
+            More ideas
+          </button>
+          <div id="more-ideas" class="more-ideas" aria-live="polite"></div>
+          <div id="quick-picks" class="quick-picks" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="favorites card" aria-labelledby="favorites-title">
+        <div class="section-heading">
+          <h2 id="favorites-title">Saved ideas</h2>
+        </div>
+        <div id="favorites-list" class="favorites-list">
+          <p class="empty-copy">No saved ideas yet.</p>
+        </div>
+      </section>
+
+      <section class="safety card" aria-labelledby="safety-title">
+        <div class="section-heading">
+          <h2 id="safety-title">Parent notes</h2>
+          <p>Always supervise and adjust for your child.</p>
+        </div>
+        <ul>
+          <li>Keep play safe and age-appropriate.</li>
+          <li>Skip anything with choking or breakage risks.</li>
+          <li>No personal details are asked for.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js?v=5"></script>
+  </body>
+</html>
