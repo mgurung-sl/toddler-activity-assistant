@@ -23,7 +23,7 @@ Little Moments is a simple toddler activity assistant for parents and caregivers
 You can open `index.html` directly in a browser, or serve the folder locally:
 
 ```bash
-cd /Users/manisha.gurung/Projects/toddler-activity-assistant
+cd toddler-activity-assistant
 python3 -m http.server 8000
 ```
 
