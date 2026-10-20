@@ -1,19 +1,21 @@
 :root {
   color-scheme: light;
-  --background: #fffaf4;
-  --card: rgba(255, 255, 255, 0.85);
+  --background: #fffaf5;
+  --card: rgba(255, 255, 255, 0.88);
   --card-strong: #ffffff;
-  --text: #1f2c3d;
-  --muted: #5d6876;
-  --accent: #ff7a59;
-  --accent-strong: #f2604d;
-  --accent-soft: #ffe3d8;
-  --mint: #dff8eb;
-  --mint-strong: #9ae2bd;
-  --sun: #ffe9a8;
-  --lavender: #ede7ff;
-  --line: rgba(42, 51, 67, 0.1);
-  --shadow: 0 18px 40px rgba(254, 155, 112, 0.18);
+  --text: #24364a;
+  --muted: #5d6d7f;
+  --accent: #ff7b66;
+  --accent-strong: #ef5d4a;
+  --accent-soft: #ffe2d9;
+  --mint: #dff9ee;
+  --mint-strong: #9fe3c1;
+  --sun: #ffe7a9;
+  --lavender: #efe7ff;
+  --rose: #ffdfe7;
+  --sky: #dff3ff;
+  --line: rgba(36, 54, 74, 0.11);
+  --shadow: 0 18px 40px rgba(255, 140, 114, 0.14);
   --radius: 24px;
   font-family: "Avenir Next", "Trebuchet MS", sans-serif;
 }
@@ -26,9 +28,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(255, 214, 163, 0.9), transparent 24%),
-    radial-gradient(circle at top right, rgba(170, 233, 200, 0.9), transparent 20%),
-    radial-gradient(circle at bottom left, rgba(214, 201, 255, 0.8), transparent 24%),
+    radial-gradient(circle at top left, rgba(255, 214, 152, 0.95), transparent 22%),
+    radial-gradient(circle at top right, rgba(176, 232, 210, 0.9), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(214, 201, 255, 0.8), transparent 20%),
+    radial-gradient(circle at bottom right, rgba(255, 209, 224, 0.8), transparent 22%),
     linear-gradient(180deg, #fffdfb 0%, var(--background) 100%);
   color: var(--text);
 }
@@ -51,20 +54,20 @@ body {
 
 .hero {
   padding-top: 1.5rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 235, 213, 0.8));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 239, 214, 0.9));
 }
 
-.eyebrow {
-  display: inline-flex;
-  margin: 0;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-size: 0.8rem;
+.brand-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.brand-logo {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(243, 140, 99, 0.14));
 }
 
 h1,
@@ -107,7 +110,7 @@ label {
 
 .hero-notes span:nth-child(1) { background: var(--sun); }
 .hero-notes span:nth-child(2) { background: var(--mint); }
-.hero-notes span:nth-child(3) { background: var(--lavender); }
+.hero-notes span:nth-child(3) { background: var(--sky); }
 
 .section-heading {
   margin-bottom: 1rem;
@@ -157,16 +160,16 @@ select:focus-visible {
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #ffb56d, #f18962);
+  background: linear-gradient(135deg, #ffb874, #f58b67);
   color: #fff;
   border-color: rgba(194, 110, 59, 0.2);
-  box-shadow: 0 10px 22px rgba(241, 137, 98, 0.28);
+  box-shadow: 0 10px 22px rgba(245, 137, 104, 0.26);
 }
 
 .secondary-button {
   background: rgba(255, 255, 255, 0.9);
   color: var(--text);
-  border-color: rgba(227, 111, 79, 0.18);
+  border-color: rgba(255, 111, 97, 0.18);
 }
 
 .activity-card {

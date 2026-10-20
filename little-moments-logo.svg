@@ -1,0 +1,41 @@
+<svg width="420" height="140" viewBox="0 0 420 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Little Moments logo</title>
+  <desc id="desc">A warm pastel badge with a smiling sun and the word Little Moments.</desc>
+  <defs>
+    <linearGradient id="badge" x1="0" y1="0" x2="116" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3D6"/>
+      <stop offset="1" stop-color="#FFE0CC"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="28" y1="24" x2="84" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD874"/>
+      <stop offset="1" stop-color="#F8B24A"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10 12)">
+    <rect x="0" y="0" width="116" height="116" rx="34" fill="url(#badge)"/>
+    <circle cx="58" cy="58" r="30" fill="url(#sun)"/>
+    <circle cx="58" cy="58" r="13" fill="#FFF7DE"/>
+    <g fill="#F39A5D" opacity="0.9">
+      <circle cx="58" cy="22" r="5"/>
+      <circle cx="58" cy="94" r="5"/>
+      <circle cx="22" cy="58" r="5"/>
+      <circle cx="94" cy="58" r="5"/>
+      <circle cx="31" cy="31" r="4.5"/>
+      <circle cx="85" cy="31" r="4.5"/>
+      <circle cx="31" cy="85" r="4.5"/>
+      <circle cx="85" cy="85" r="4.5"/>
+    </g>
+    <path d="M36 53C38 43 46 38 56 38C67 38 76 45 77 56C78 69 65 77 56 83C47 77 34 69 36 53Z" fill="#F26D5B"/>
+    <path d="M33 67C29.5 67 26.5 69.5 26.5 73C26.5 81 35 87 42.5 90C49 87 58 81 58 73C58 69.5 55 67 51.5 67H33Z" fill="#FFF5F3" opacity="0.94"/>
+    <circle cx="49" cy="54" r="2.2" fill="#1F2C3D"/>
+    <circle cx="63" cy="54" r="2.2" fill="#1F2C3D"/>
+    <path d="M49 64C52 67 55 67 61 64" stroke="#1F2C3D" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(142 44)">
+    <text x="0" y="26" font-family="Avenir Next, Trebuchet MS, sans-serif" font-size="34" font-weight="800" fill="#F38C63">Little</text>
+    <text x="0" y="62" font-family="Avenir Next, Trebuchet MS, sans-serif" font-size="34" font-weight="800" fill="#1F2C3D">Moments</text>
+    <text x="2" y="82" font-family="Avenir Next, Trebuchet MS, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#5D6876">EASY WINS FOR BUSY DAYS</text>
+  </g>
+</svg>
